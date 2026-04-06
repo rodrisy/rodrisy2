@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools — Rodrigo Sánchez</title>
+    <meta name="description" content="Utilities and tools built by Rodrigo Sánchez.">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar light-nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rodrigo Sánchez</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="https://www.rodrisy.com/s/Rodrigo-Sanchez-Yuste-Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero tools-hero">
+        <div class="container">
+            <a href="index.html#work" class="page-hero-back">
+                <i class="fas fa-arrow-left"></i> All categories
+            </a>
+            <h1 class="page-hero-title">
+                Tools &amp;<br>
+                <em>Utilities.</em>
+            </h1>
+            <p class="page-hero-desc">Small, focused utilities I built to solve real problems — for myself and for others. Tools don't need to be big to be useful.</p>
+        </div>
+    </section>
+
+    <!-- Spotlight: AI Declare -->
+    <section class="spotlight tools-page">
+        <div class="container">
+            <div class="spotlight-inner">
+                <div class="spotlight-info">
+                    <span class="spotlight-label"><i class="fas fa-star"></i> Featured tool</span>
+                    <h2 class="spotlight-title">AI<em>Declare.</em></h2>
+                    <p class="spotlight-desc">Paste any text, get a probability score of AI authorship — instant, no sign-up. Built on top of my NLP research and trained classifier. The question that drove it: can a machine reliably tell if a human or an LLM wrote something? Turns out, often yes.</p>
+                    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:.3rem .75rem;border-radius:100px;font-size:.75rem;font-weight:600;">Python</span>
+                        <span style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:.3rem .75rem;border-radius:100px;font-size:.75rem;font-weight:600;">Flask</span>
+                        <span style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:.3rem .75rem;border-radius:100px;font-size:.75rem;font-weight:600;">NLP</span>
+                    </div>
+                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+                        <a href="#" target="_blank" class="btn btn-primary" style="font-size:.85rem;padding:.6rem 1.2rem;">
+                            <i class="fas fa-external-link-alt"></i> Try it
+                        </a>
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn btn-ghost" style="font-size:.85rem;padding:.6rem 1.2rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="spotlight-visual">
+                    <div class="spotlight-visual-inner">
+                        🔍
+                        <!-- Replace with: <img src="img/aideclare-screenshot.jpg" alt="AI Declare" class="spotlight-img"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-list">
+        <div class="container">
+
+            <!-- Running Tool -->
+            <div class="project-feature" data-cat="tools">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        🏃
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">01 / 02</p>
+                    <div class="project-badges">
+                        <span class="badge badge-wip">WIP 🚧</span>
+                        <span class="badge badge-category">Python · Strava API</span>
+                    </div>
+                    <h2 class="project-title">Running Tool</h2>
+                    <p class="project-desc">A personal running analytics tool that pulls data from the Strava API and generates custom training insights and performance reports. I run a lot and Strava's built-in analytics don't show me what I actually want to know — things like pace consistency over long blocks, effort distribution, and how my training load compares week to week. This tool does that, my way.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Strava API</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="index.html#contact" class="btn-action primary-action">
+                            <i class="fas fa-handshake"></i> Work with me
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Declare Tool -->
+            <div class="project-feature flip" data-cat="tools">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        🔍
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">02 / 02</p>
+                    <div class="project-badges">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span class="badge badge-category">Python · Flask · NLP</span>
+                    </div>
+                    <h2 class="project-title">AI Declare (Tool)</h2>
+                    <p class="project-desc">The standalone web tool version of the AI Declare classifier. Paste any text — an essay, an email, a blog post — and get an instant probability score of AI authorship. Designed to be fast, no-frills, and genuinely useful. Built on Flask with the trained model from my research, wrapped in a clean interface. Different from the full web app — this is just the tool, optimised for speed.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">scikit-learn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="btn-action primary-action">
+                            <i class="fas fa-external-link-alt"></i> Try it
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rodrigo Sánchez · <a href="index.html" style="color:rgba(255,255,255,.45);text-decoration:underline;text-underline-offset:3px;">Back to home</a></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/rodrisy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-sanchez-66bb8b237/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.strava.com/athletes/123858349" target="_blank" aria-label="Strava"><i class="fab fa-strava"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Projects — Rodrigo Sánchez</title>
+    <meta name="description" content="Full-stack and frontend web projects by Rodrigo Sánchez.">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar light-nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rodrigo Sánchez</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="https://www.rodrisy.com/s/Rodrigo-Sanchez-Yuste-Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero web-hero">
+        <div class="container">
+            <a href="index.html#work" class="page-hero-back">
+                <i class="fas fa-arrow-left"></i> All categories
+            </a>
+            <h1 class="page-hero-title">
+                Web<br>
+                <em>Projects.</em>
+            </h1>
+            <p class="page-hero-desc">Full-stack and frontend web projects — from AI-powered tools to community resource hubs. Building for browsers since early on.</p>
+        </div>
+    </section>
+
+    <!-- Spotlight: IB to Uni -->
+    <section class="spotlight web-page">
+        <div class="container">
+            <div class="spotlight-inner">
+                <div class="spotlight-info">
+                    <span class="spotlight-label"><i class="fas fa-star"></i> Featured project</span>
+                    <h2 class="spotlight-title">IB to<em>Uni.</em></h2>
+                    <p class="spotlight-desc">A live resource hub for IB students applying to UK universities — grade conversion tools, UCAS guides, and everything I couldn't find in one place when I went through the process myself. Built it. Shipped it. It's out there.</p>
+                    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:.3rem .75rem;border-radius:100px;font-size:.75rem;font-weight:600;">HTML/CSS</span>
+                        <span style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:.3rem .75rem;border-radius:100px;font-size:.75rem;font-weight:600;">JavaScript</span>
+                    </div>
+                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+                        <a href="https://rodrisy.github.io/ibresources/" target="_blank" class="btn btn-primary" style="font-size:.85rem;padding:.6rem 1.2rem;">
+                            <i class="fas fa-external-link-alt"></i> Visit site
+                        </a>
+                        <a href="https://github.com/rodrisy/ibresources" target="_blank" class="btn btn-ghost" style="font-size:.85rem;padding:.6rem 1.2rem;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="spotlight-visual">
+                    <div class="spotlight-visual-inner">
+                        📚
+                        <!-- Replace with: <img src="img/ibtouni-screenshot.jpg" alt="IB to Uni" class="spotlight-img"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-list">
+        <div class="container">
+
+            <!-- AI Declare Web App -->
+            <div class="project-feature" data-cat="web">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        🤖
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">01 / 05</p>
+                    <div class="project-badges">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span class="badge badge-category">Python · Flask · JS</span>
+                    </div>
+                    <h2 class="project-title">AI Declare</h2>
+                    <p class="project-desc">A full-stack web app for AI text detection. Paste any text and get an instant probability score of AI authorship. Built on top of the research and classifier model I developed for my AI Declare paper. Clean interface, real-time classification, built to be usable by students, teachers, and researchers.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">ML</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="btn-action primary-action">
+                            <i class="fas fa-external-link-alt"></i> Visit site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IB to Uni -->
+            <div class="project-feature flip" data-cat="web">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        📚
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">02 / 05</p>
+                    <div class="project-badges">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span class="badge badge-category">HTML · CSS · JS</span>
+                    </div>
+                    <h2 class="project-title">IB to Uni</h2>
+                    <p class="project-desc">A comprehensive resource hub for IB students applying to UK universities. Guides, tips, grade conversion tools, and breakdowns of UCAS points from IB scores. I built this because I went through the process myself and couldn't find everything in one place. Now it lives at a public URL for anyone who needs it.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://rodrisy.github.io/ibresources/" target="_blank" class="btn-action primary-action">
+                            <i class="fas fa-external-link-alt"></i> Visit site
+                        </a>
+                        <a href="https://github.com/rodrisy/ibresources" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- castiyuste.com -->
+            <div class="project-feature" data-cat="web">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        🌿
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">03 / 05</p>
+                    <div class="project-badges">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span class="badge badge-category">HTML · CSS · JS</span>
+                    </div>
+                    <h2 class="project-title">castiyuste.com</h2>
+                    <p class="project-desc">Rebuilt my mom's coaching site from scratch as a clean static HTML/CSS/JS site after migrating her off WordPress. Includes a fully custom browser-based blog admin panel — she writes posts, hits "Generate", downloads the HTML file, and drops it in a folder. No server, no CMS, no dependencies. 43 WordPress posts migrated programmatically from the XML export.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://castiyuste.com" target="_blank" class="btn-action primary-action">
+                            <i class="fas fa-external-link-alt"></i> Visit site
+                        </a>
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MeetHalfway -->
+            <div class="project-feature flip" data-cat="web">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        📍
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">04 / 05</p>
+                    <div class="project-badges">
+                        <span class="badge badge-wip">WIP 🚧</span>
+                        <span class="badge badge-category">JS · Maps API</span>
+                    </div>
+                    <h2 class="project-title">MeetHalfway</h2>
+                    <p class="project-desc">A web app that finds the geographic midpoint between two locations and suggests meeting spots nearby. Enter two addresses, get a map with restaurants, cafés, and places to go that are equally convenient for both people. Built because figuring out where to meet someone in a new city is genuinely annoying.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Google Maps API</span>
+                        <span class="tag">Geolocation</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/rodrisy" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="index.html#contact" class="btn-action primary-action">
+                            <i class="fas fa-handshake"></i> Work with me
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EloRanker -->
+            <div class="project-feature" data-cat="web">
+                <div class="project-visual">
+                    <div class="project-visual-inner">
+                        🏆
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-number">05 / 05</p>
+                    <div class="project-badges">
+                        <span class="badge badge-done">Done ✓</span>
+                        <span class="badge badge-category">JavaScript · Swift</span>
+                    </div>
+                    <h2 class="project-title">EloRanker</h2>
+                    <p class="project-desc">A custom Elo rating system. Input any list of items — movies, players, songs, anything — and rank them head-to-head in a tournament-style bracket. Each matchup updates the Elo scores until a definitive ranking emerges. Originally built for football rankings, then generalised because the idea works for anything you want to compare fairly.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Swift</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/rodrisy/customranker" target="_blank" class="btn-action">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="btn-action primary-action">
+                            <i class="fas fa-external-link-alt"></i> Visit site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rodrigo Sánchez · <a href="index.html" style="color:rgba(255,255,255,.45);text-decoration:underline;text-underline-offset:3px;">Back to home</a></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/rodrisy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-sanchez-66bb8b237/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.strava.com/athletes/123858349" target="_blank" aria-label="Strava"><i class="fab fa-strava"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
