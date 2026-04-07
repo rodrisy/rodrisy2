@@ -39,7 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // ── Smooth scroll for # links ─────────────
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
-            var target = document.querySelector(this.getAttribute('href'));
+            var href = this.getAttribute('href');
+            if (!href || href === '#') return;
+
+            var target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
                 window.scrollTo({
@@ -49,6 +52,44 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // ── Copy email contact card ──────────────
+    var emailCopyCard = document.querySelector('.email-copy-card');
+    if (emailCopyCard) {
+        var emailCopyText = emailCopyCard.querySelector('.email-copy-text');
+        var emailToCopy = emailCopyCard.getAttribute('data-copy-email');
+        var originalText = emailCopyText ? emailCopyText.textContent : emailToCopy;
+
+        function setCopyMessage(message) {
+            if (!emailCopyText) return;
+            emailCopyText.textContent = message;
+            window.setTimeout(function () {
+                emailCopyText.textContent = originalText;
+            }, 2200);
+        }
+
+        emailCopyCard.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (!emailToCopy) return;
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(emailToCopy)
+                    .then(function () { setCopyMessage('Copied email to clipboard'); })
+                    .catch(function () { setCopyMessage(emailToCopy); });
+            } else {
+                var textarea = document.createElement('textarea');
+                textarea.value = emailToCopy;
+                textarea.setAttribute('readonly', '');
+                textarea.style.position = 'fixed';
+                textarea.style.left = '-9999px';
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                setCopyMessage('Copied email to clipboard');
+            }
+        });
+    }
 
     // ── Project filter (compact cards) ───────
     var filterBtns = document.querySelectorAll('.filter-btn');
