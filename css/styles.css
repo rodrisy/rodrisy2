@@ -1162,20 +1162,25 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 0 0 5px rgba(22,163,74,0.18);
 }
 
-/* City label hidden by default, shown on current */
+/* City label — always visible */
 .timeline-city {
-    font-size: 0.62rem;
-    font-weight: 700;
-    color: transparent;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.45);
     white-space: nowrap;
     transition: color 0.2s ease;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1;
 }
 
+.timeline-stop:hover .timeline-city {
+    color: rgba(255,255,255,0.9);
+}
+
 .timeline-stop.current .timeline-city {
     color: #86efac;
+    font-weight: 700;
 }
 
 /* The line between stops */
@@ -1189,6 +1194,97 @@ img { display: block; max-width: 100%; }
     top: -14px;
     align-self: flex-start;
     margin-top: 28px;
+}
+
+/* ── Spotlight (featured project on category pages) ── */
+.spotlight {
+    padding: var(--spacing-3xl) 0;
+}
+
+.spotlight.mobile-page   { background: linear-gradient(160deg, #0e1f40 0%, #0d1a0d 100%); }
+.spotlight.web-page      { background: linear-gradient(160deg, #1e0a38 0%, #0d1a0d 100%); }
+.spotlight.research-page { background: linear-gradient(160deg, #3a1000 0%, #0d1a0d 100%); }
+.spotlight.tools-page    { background: linear-gradient(160deg, #04302d 0%, #0d1a0d 100%); }
+
+.spotlight-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.spotlight-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: var(--spacing-lg);
+}
+
+.spotlight-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    color: white;
+    margin-bottom: var(--spacing-lg);
+}
+
+.spotlight-title em {
+    font-style: italic;
+    display: block;
+    color: #86efac;
+}
+
+.spotlight-desc {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.75;
+    margin-bottom: var(--spacing-lg);
+    max-width: 480px;
+}
+
+.spotlight-visual {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.spotlight-visual-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-xl);
+    position: relative;
+}
+
+.spotlight-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-xl);
+}
+
+@media (max-width: 768px) {
+    .spotlight-inner { grid-template-columns: 1fr; }
+    .spotlight-visual { order: -1; aspect-ratio: 16/9; }
+}
+
+/* About photo placeholder */
+.about-photo-placeholder {
+    width: 100%;
 }
 
 /* ── Contact photo ────────────────────────── */

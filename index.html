@@ -138,9 +138,9 @@
                     <span class="section-label">About me</span>
                     <h2 class="about-dark-title">Hey, I'm<br><em>Rodrigo.</em></h2>
                     <div class="about-bio">
-                        <p>First year <strong>CS & Business Studies</strong> student at the <strong>University of Warwick</strong> — originally from Spain 🇪🇸. I've moved <strong>9 times across 9 countries</strong> ✈️, living in Madrid, Bucharest, Zurich, Barcelona, El Salvador, Bogotá, Buenos Aires, Mexico City, and New York. That restless curiosity drives everything I build.</p>
+                        <p>First year <strong>CS & Business Studies</strong> student at the <strong>University of Warwick</strong> — originally from Spain 🇪🇸. I've moved a lot across <strong>9 countries</strong> ✈️, living through Europe and the Americas. That restless curiosity drives everything I build.</p>
                         <p>I started coding at 9 and haven't stopped. I specialise in <strong>iOS app development</strong> (Swift, SwiftUI) and enjoy building full-stack web projects. I'm drawn to problems at the intersection of <strong>technology, education, and sustainability</strong>.</p>
-                        <p>Based between <strong>London</strong> and <strong>New York</strong> 🗽 — my parents are still there and so am I, whenever I can be. Open to projects on both sides of the Atlantic. Let's build something 🤝</p>
+                        <p>Based between <strong>London</strong> and <strong>New York</strong> 🗽 — studying at University of Warwick. Open to projects on both sides of the Atlantic. Let's build something 🤝</p>
                     </div>
                     <div class="pills-row">
                         <span class="pill-dark">Swift</span>
@@ -170,8 +170,17 @@
                 </div>
 
                 <div class="about-dark-photos">
-                    <img src="img/rodrigo-mural.jpg" alt="Rodrigo Sánchez" class="about-photo-main">
-                    <img src="img/rodrigo-rhino.jpg" alt="Safari" class="about-photo-secondary">
+                    <!-- Main portrait — using Squarespace CDN until you save img/rodrigo-mural.jpg locally -->
+                    <img
+                        src="https://images.squarespace-cdn.com/content/v1/676239f43af44467d9b590b9/48a8a670-1e63-4714-ae3b-ad0e6ff42cf2/DSC03382.jpg"
+                        alt="Rodrigo Sánchez"
+                        class="about-photo-main"
+                        onerror="this.style.display='none'"
+                    >
+                    <!-- Safari/rhino photo — save as img/rodrigo-rhino.jpg -->
+                    <div class="about-photo-placeholder" id="rhinoWrap">
+                        <img src="img/rodrigo-rhino.jpg" alt="On safari" class="about-photo-secondary" onerror="document.getElementById('rhinoWrap').style.display='none'">
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,9 +302,14 @@
                     </div>
                 </div>
 
-                <!-- Save the running photo as img/rodrigo-running.jpg -->
+                <!-- Running photo — save as img/rodrigo-running.jpg to use your own -->
                 <div class="contact-photo-wrap">
-                    <img src="img/rodrigo-running.jpg" alt="Rodrigo running" class="contact-photo">
+                    <img
+                        src="img/rodrigo-running.jpg"
+                        alt="Rodrigo running"
+                        class="contact-photo"
+                        onerror="this.src='https://images.squarespace-cdn.com/content/v1/676239f43af44467d9b590b9/48a8a670-1e63-4714-ae3b-ad0e6ff42cf2/DSC03382.jpg'"
+                    >
                     <div class="contact-photo-caption">
                         <p>Running somewhere in Spain 🇪🇸</p>
                     </div>
