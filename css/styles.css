@@ -768,6 +768,13 @@ img { display: block; max-width: 100%; }
     inset: 0;
 }
 
+.project-visual-img.padded-img {
+    inset: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: calc(var(--radius-xl) - 12px);
+}
+
 .project-info { padding: var(--spacing-lg) 0; }
 
 .project-badges {
